@@ -1,0 +1,250 @@
+/* Font and Color Variables */
+@import url('https://fonts.googleapis.com/css2?family=Palatino Linotype:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --headingFont: 'Heading Font', Palatino Linotype;
+  --paragraphFont: 'Paragraph Font', Cambria;
+
+  --mainTextColor-light: #000;
+  --secondaryTextColor-light: rgb(51 51 51);
+  --mainLinkColor-light: #0da2b8;
+  --mainBorderColor-light: rgb(218, 218, 218);
+  --mainBgColor-light: rgb(249, 250, 251);
+
+  --mainTextColor-dark: #fff;
+  --secondaryTextColor-dark: #adb0b1;
+  --mainLinkColor-dark: rgb(30, 190, 214);
+  --mainBorderColor-dark: #2b3031;
+  --mainBgColor-dark: #131415;
+
+  --mainTextColor: var(--mainTextColor-light);
+  --secondaryTextColor: var(--secondaryTextColor-light);
+  --mainLinkColor: var(--mainLinkColor-light);
+  --mainBorderColor: var(--mainBorderColor-light);
+  --mainBgColor: var(--mainBgColor-light);
+}
+
+/* Apply fonts to headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headingFont);
+}
+
+/* Apply font to paragraphs */
+p {
+  font-family: var(--paragraphFont);
+}
+/* Add the following styles to target professional work history heading, roles, and responsibilities */
+#Professional-Work-Experience-Wrapper h2 {
+    font-family: var(--headingFont); /* Change font for the heading */
+}
+  
+.card-work-history strong {
+    font-family: 'Paragraph Font', Cambria; /* Change font for roles */
+}
+  
+.card-work-history li {
+    font-family: 'Paragraph Font', Cambria; /* Change font for responsibilities */
+}
+.card-work-history p.date,
+.card-work-history p.subheading {
+    margin-bottom: 5px; /* Adjust the value as needed */
+}  
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+    font-family: 'Cambria';
+    justify-content: space-between;
+    line-height: 1.5em;
+}
+
+body {
+    background-color: var(--mainBgColor);
+}
+
+p, span, li {
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li {
+    line-height: 1.5em;
+}
+
+/* Container Styles */
+#container--main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#wrapper--hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profile-info {
+    flex: 1;
+}
+
+#short-bio {
+    flex: 0 0 30%;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+#short-bio p {
+    margin: 0 0 10px;
+    color: #999;
+    line-height: 1.2;
+}
+
+#user-name {
+    font-size: 48px;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 4px solid rgba(214, 22, 140, 0.77);
+}
+
+.socials--list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+#Download-CV {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#email {
+    color: var(--mainTextColor);
+}
+/* Add the following styles to target professional work history heading, roles, and responsibilities */
+#Professional-Work-Experience-Wrapper {
+    border: 1px solid var(--mainBorderColor); /* Add border to the professional work experience wrapper */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    padding: 10px; /* Add padding to space out the content */
+    margin-bottom: 20px; /* Optional: Add margin to space out the section */
+}
+
+#Professional-Work-Experience-Wrapper h2 {
+    font-family: var(--headingFont); /* Change font for the heading */
+}
+/* Work History Card Styles */
+.card-work-history,
+.card--work-history {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.card-work-history {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card--work-history {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
+.card-work-history:not(:last-child),
+.card--work-history:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+.card-work-history strong + p.date,
+.card--work-history strong + p.date {
+    display: inline;
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+/* Project Card Styles */
+.card--project {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+}
+
+.card--project a {
+    color: var(--mainTextColor);
+    transition: 0.3s;
+}
+
+.card--project a:hover {
+    color: var(--mainLinkColor);
+}
+
+.section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 1px solid var(--mainBorderColor); /* Add border to all sides */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+}
+
+/* Optional: Add margin to space out the sections */
+.section--page + .section--page {
+    margin-top: 5px;
+}
+
+.line-break {
+    background-color: var(--mainBorderColor);
+    height: 1px;
+}
+/* Media Queries */
+@media (max-width: 600px) {
+    .section--page {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #wrapper--hero {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    #wrapper--hero {
+        flex-direction: column;
+    }
+
+    .card--work-history {
+        border-left: none;
+        padding-left: 0;
+    }
+}
